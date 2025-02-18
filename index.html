@@ -1,0 +1,749 @@
+<!-- 
+  Project: CyberTweet UI Using Tailwind CSS V4
+  Author: Vinay Mahendre
+  Date: 2025
+  Description: CyberTweet is a modern UI project designed to showcase Tailwind CSS V4 skills. This project design is inspired by X (formerly Twitter) and built with a clean, professional design..
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberTweet</title>
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+ <!-- Code written by Vinay Mahendre -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <div class="flex container mx-auto max-w-7xl my-4">
+      <div class="first w-10 md:w-[80%]">
+        <div
+          class="logo w-[41px] md:w-15 flex items-center m-auto justify-center relative md:left-[20px] mb-[10px]"
+        >
+          <img class="w-[40px] md:w-[100px]" src="svg/logo.svg" alt="logo" />
+          <h2
+            class="text text-white font-bold text-2xl"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            <span class="hidden md:block">CyberTweet</span>
+          </h2>
+        </div>
+        <div class="sidebar flex justify-center md:justify-end">
+          <ul class="flex flex-col text-xl space-y-3 md:px-11 text-white">
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span
+                class="material-symbols-outlined text-3xl"
+                style="font-size: 20px"
+              >
+                home </span
+              ><span class="hidden md:block">Home</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                search </span
+              ><span class="hidden md:block">Explore</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                notifications </span
+              ><span class="hidden md:block">Notifications</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                check_box_outline_blank </span
+              ><span class="hidden md:block">Grok</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                list </span
+              ><span class="hidden md:block">Lists</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                bookmark </span
+              ><span class="hidden md:block">Bookmarks</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                group </span
+              ><span class="hidden md:block">Communities</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                finance_chip </span
+              ><span class="hidden md:block">Primium</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                person </span
+              ><span class="hidden md:block">Profile</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 rounded-full hover:cursor-pointer px-5 py-2"
+            >
+              <span class="material-symbols-outlined" style="font-size: 20px">
+                more </span
+              ><span class="hidden md:block">More</span>
+            </li>
+          </ul>
+        </div>
+        <div class="butt flex justify-evenly my-4">
+          <button
+            class="flex items-center justify-center border rounded-2xl w-[200px] h-[30px] bg-cyan-400 text-black cursor-pointer hover:bg-[#00b3ff] font-bold"
+          >
+            <span
+              class="hidden md:block md:justify-center md:relative md:left-[10px]"
+              >Post</span
+            >
+            <span class="material-symbols-outlined md:invisible"> send </span>
+          </button>
+        </div>
+        <div class="acc justify-center mb-[10px] mt-[50px] hidden md:flex">
+          <div
+            class="list px-4 p-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl flex gap-1 items-center justify-between text-white w-[300px]"
+          >
+            <div class="group flex gap-9">
+              <img
+                class="w-15 rounded-full border"
+                src="./img/pro.png"
+                alt=""
+                
+              />
+               <!-- Code written by Vinay Mahendre -->
+              <div
+                class="font-bold flex flex-col justify-center text-sm relative right-[16px]"
+              >
+                <span class="hover:underline">Vinay</span>
+                <div class="text-gray-500 text-sm cursor-pointer">@vinay</div>
+              </div>
+            </div>
+            <div class="dots">
+              <span class="material-symbols-outlined hover:text-[#00d5ff]">
+                more_horiz
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer bg-gray-900 mx-[20px] h-[130px] flex-col justify-center items-center rounded-2xl text-gray-500 hidden md:flex"
+        >
+          <div class="items-center flex gap-4">
+            <a class="hover:underline" href="#">Terms of Service</a>
+            <a class="hover:underline" href="#">Privacy Policy</a>
+          </div>
+          <div class="items-center flex gap-4">
+            <a class="hover:underline" href="#">Cokie Policy</a>
+            <a class="hover:underline" href="#">Accessibility</a>
+            <a class="hover:underline" href="#">Ads info</a>
+          </div>
+          <div class="items-center flex gap-4">
+            <a class="hover:underline" href="#">More...</a>
+          </div>
+          <h3>Copyright &copy, 2025 CyberTweet Corp.</h3>
+        </div>
+        <div class="aboutus w-full h-[50px] justify-center flex items-center my-[10px]">
+            <div class="name w-fit bg-gray-900 px-[10px] rounded-2xl text-white cursor-pointer hover:text-[#00d5ff]">
+                <a href="#" id="aboutLink">About-Us</a>
+            </div>
+        </div>
+      </div>
+ 
+
+      <div id="modal" class="fixed inset-0 flex items-center justify-center bg-white/0 backdrop-blur-md hidden">
+        <!-- Modal content -->
+        <div class="bg-black p-6 w-64 h-64 rounded-lg shadow-lg flex items-center justify-center">
+          <span class="text-xl font-bold text-white">Developed by <h2 class="underline text-[#00d5ff]">Vinay Mahendre</h2> to demonstrate Tailwind CSS V4 expertise. 
+        <br> 
+          Enjoy exploring CyberTweet!</span>
+        </div>
+      </div>
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+      <div
+        class="second w-full border-[1px] border-x-gray-600 border-y-black text-white sm:h-[158vh] overflow-auto hide-scrollbar h-[90vh]"
+      >
+        <div class="top1 sticky top-0 bg-white/0 backdrop-blur-md">
+          <div class="top flex p-3 relative border-b-[1px] border-gray-600">
+            <div
+              class="absolute w-16 h-1 rounded-full bg-[#00d5ff] bottom-0 left-[17%] z-10"
+            ></div>
+            <div
+              class="left w-1/2 flex justify-center font-bold text-lg cursor-pointer"
+            >
+              For You
+            </div>
+            <div
+              class="right w-1/2 flex justify-center font-bold text-lg cursor-pointer"
+            >
+              Following
+            </div>
+            <div class="settings mx-2">
+              <span class="material-symbols-outlined cursor-pointer"
+                >settings</span
+              >
+            </div>
+          </div>
+        </div>
+ <!-- Code written by Vinay Mahendre -->
+        <div
+          class="whatishapp flex gap-4 mt-[20px] mx-[10px] justify-center items-center"
+        >
+          <div class="img w-20">
+            <img
+              class="rounded-full cursor-pointer border border-[#00d5ff]"
+              src="./img/pro.png"
+              alt="profile"
+            />
+          </div>
+          <input
+            type="text"
+            class="w-full bg-black text-white rounded-full h-[50px] px-[10px] border-none outline-none"
+            placeholder="What is Happening..."
+          />
+        </div>
+        <div class="see flex mx-[95px] gap-1 cursor-pointer">
+          <span class="material-symbols-outlined text-[#00d5ff]"> public </span>
+          <h3 class="font-light text-[#00d5ff]">Everyone can reply</h3>
+        </div>
+        <div
+          class="line border-[1px] my-[15px] mx-[50px] border-gray-800"
+        ></div>
+        <div
+          class="svgs flex gap-4 mx-[20px] sm:mx-[95px] items-center justify-between"
+        >
+          <div class="flex overflow-x-auto hide-scrollbar">
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              gallery_thumbnail
+            </span>
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              gif_box
+            </span>
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              list
+            </span>
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              sentiment_satisfied
+            </span>
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              calendar_clock
+            </span>
+            <span
+              class="material-symbols-outlined text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+              style="font-size: 20px"
+            >
+              location_on
+            </span>
+          </div>
+          <button
+            class="bg-[#00d5ff] text-black rounded-full w-[100px] font-bold cursor- cursor-pointer hover:text-[#00b3ff]pointer hover:bg-[#00b3ff]"
+          >
+            <span>Post</span>
+          </button>
+        </div>
+        <div class="line border my-[10px] border-gray-800"></div>
+        <h3
+          class="flex justify-center items-center font-light text-[#00d5ff] cursor-pointer hover:text-[#00b3ff]"
+        >
+          Show 250 Posts
+        </h3>
+        <div class="line border my-[10px] border-gray-800"></div>
+
+        <div class="posts flex justify-between items-center mx-[15px]">
+          <div class="pro flex items-center gap-2">
+            <img
+              class="w-[50px] rounded-full border cursor-pointer"
+              src="./img/3.jpg"
+              alt="pro1"
+            />
+            <h4 class="font-bold cursor-pointer">SecurityX</h4>
+            <span class="material-symbols-outlined text-[#00d5ff]">
+              verified
+            </span>
+            <h5 class="text-gray-500">@securityx - 2h</h5>
+          </div>
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-[#00b3ff]"
+          >
+            more_horiz
+          </span>
+        </div>
+
+        <div class="post mx-[20px] my-[20px] flex flex-col gap-4">
+          <h3>
+            Biggest CyberAttack in the World...Exploited By Hacker Group...
+            <span class="text-gray-700 underline cursor-pointer">more</span>
+          </h3>
+          <img
+            class="rounded-2xl cursor-pointer"
+            src="./posts/post1.png"
+            alt="post1"
+          />
+          <div
+            class="panel flex items-center justify-between overflow-x-auto hide-scrollbar"
+          >
+            <div class="p flex items-center sm:gap-4">
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  chat_bubble</span
+                >
+                <h5 class="text-[15px]">900K</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  cached
+                </span>
+                <h5 class="text-[15px]">23.4K</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  favorite
+                </span>
+                <h5 class="text-[15px]">1.21M</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  bar_chart
+                </span>
+                <h5 class="text-[15px]">300.1K</h5>
+              </div>
+            </div>
+
+            <div class="panel2 flex gap-2">
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                bookmark
+              </span>
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                publish
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="line border my-[10px] border-gray-800"></div>
+        <div class="posts flex justify-between items-center mx-[15px]">
+          <div class="pro flex items-center gap-2">
+            <img
+              class="w-[50px] rounded-full border cursor-pointer"
+              src="./img/2.jpg"
+              alt="pro1"
+            />
+            <h4 class="font-bold cursor-pointer">Hacker BlueSpy</h4>
+            <span class="material-symbols-outlined text-[#00d5ff]">
+              verified
+            </span>
+            <h5 class="text-gray-500">@hackerbluespy - 5h</h5>
+          </div>
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-[#00b3ff]"
+          >
+            more_horiz
+          </span>
+        </div>
+
+        <div class="post mx-[20px] my-[20px] flex flex-col gap-4">
+          <h3>
+            Phones Of Indian Politicians, Journalists Hacked Using Pegasus
+            Spyware...
+            <span class="text-gray-700 underline cursor-pointer">more</span>
+          </h3>
+          <img
+            class="rounded-2xl cursor-pointer"
+            src="./posts/post2.png"
+            alt="post1"
+          />
+          <div
+            class="panel flex items-center justify-between overflow-x-auto hide-scrollbar"
+          >
+            <div class="p flex items-center gap-4">
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  chat_bubble</span
+                >
+                <h5 class="text-[15px]">991K</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  cached
+                </span>
+                <h5 class="text-[15px]">2.4K</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  favorite
+                </span>
+                <h5 class="text-[15px]">11.21M</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  bar_chart
+                </span>
+                <h5 class="text-[15px]">878.1K</h5>
+              </div>
+            </div>
+
+            <div class="panel2 flex gap-2">
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                bookmark
+              </span>
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                publish
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="line border my-[10px] border-gray-800"></div>
+
+        <div class="posts flex justify-between items-center mx-[15px]">
+          <div class="pro flex items-center gap-2">
+            <img
+              class="w-[50px] rounded-full border cursor-pointer"
+              src="./img/1.png"
+              alt="pro1"
+            />
+            <h4 class="font-bold cursor-pointer">Vinay Mahendre</h4>
+            <span class="material-symbols-outlined text-[#00d5ff]">
+              verified
+            </span>
+            <h5 class="text-gray-500">@vinaymahendre - 22h</h5>
+          </div>
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-[#00b3ff]"
+          >
+            more_horiz
+          </span>
+        </div>
+
+        <div class="post mx-[20px] my-[20px] flex flex-col gap-4">
+          <h3>
+            Alleged OpenAI Data Breach: 20 Million Accounts for Sale...
+            <span class="text-gray-700 underline cursor-pointer">more</span>
+          </h3>
+           <!-- Code written by Vinay Mahendre -->
+          <img
+            class="rounded-2xl cursor-pointer"
+            src="./posts/post3.png"
+            alt="post1"
+          />
+          <div
+            class="panel flex items-center justify-between overflow-x-auto hide-scrollbar"
+          >
+            <div class="p flex items-center gap-4">
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  chat_bubble</span
+                >
+                <h5 class="text-[15px]">1M</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  cached
+                </span>
+                <h5 class="text-[15px]">13.4K</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  favorite
+                </span>
+                <h5 class="text-[15px]">8.29k</h5>
+              </div>
+              <div
+                class="flex justify-center items-center gap-1 hover:bg-[#00b3ff3c] hover:rounded-2xl px-2 cursor-pointer hover:text-[#00d5ff]"
+              >
+                <span
+                  class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                  style="font-size: 19px"
+                >
+                  bar_chart
+                </span>
+                <h5 class="text-[15px]">30.11K</h5>
+              </div>
+            </div>
+
+            <div class="panel2 flex gap-2">
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                bookmark
+              </span>
+              <span
+                class="material-symbols-outlined hover:text-[#00d5ff] cursor-pointer"
+                style="font-size: 19px"
+              >
+                publish
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- Code written by Vinay Mahendre -->
+      <div class="tmain md:w-[10vw] xl:w-full">
+        <div class="third w-full text-white hidden xl:block">
+          <div class="search m-3">
+            <input
+              type="text"
+              class="w-[305px] px-3 py-2 rounded-[20px] bg-gray-900 outline-none"
+              placeholder="Search"
+            />
+          </div>
+          <div class="whats m-4 bg-gray-900 w-[300px] py-5 rounded-xl">
+            <h1 class="text-xl mx-3 my-1 font-bold">What's Happening</h1>
+            <div
+              class="item px-4 p-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl"
+            >
+              <div class="font-bold text-sm text-gray-700">
+                Trending in India
+              </div>
+              <div class="font-bold flex items-center">
+                Biggest CyberAttack in the World
+                <img
+                  class="my-[10px] rounded w-20"
+                  src="./img/cyber.jpg"
+                  alt="cyberimg"
+                />
+              </div>
+              <div class="text-gray-500">90.2K Posts</div>
+            </div>
+            <div
+              class="sec-text py-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl"
+            >
+              <div
+                class="font-bold mx-4 my-[10px] text-sm text-gray-700 flex justify-between"
+              >
+                Cyber-Trending
+                <span class="material-symbols-outlined hover:text-gray-300">
+                  more_horiz
+                </span>
+              </div>
+              <div class="font-bold mx-4 flex">#CyberAttack</div>
+              <div class="mx-4 my-2 text-gray-500">500k Posts</div>
+            </div>
+            <div
+              class="sec-text py-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl"
+            >
+              <div
+                class="font-bold mx-4 my-[10px] text-sm text-gray-700 flex justify-between"
+              >
+                Trending in USA
+                <span class="material-symbols-outlined hover:text-gray-300">
+                  more_horiz
+                </span>
+              </div>
+              <div class="font-bold mx-4 flex">#MalwareAttackInUSA</div>
+              <div class="mx-4 my-2 text-gray-500">250.1k Posts</div>
+            </div>
+            <div
+              class="sec-text py-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl"
+            >
+              <div
+                class="font-bold mx-4 my-[10px] text-sm text-gray-700 flex justify-between"
+              >
+                Trending in Russia
+                <span class="material-symbols-outlined hover:text-gray-300">
+                  more_horiz
+                </span>
+              </div>
+              <div class="font-bold mx-4 flex">#PegasusSpyware</div>
+              <div class="mx-4 my-2 text-gray-500">1.21M Posts</div>
+            </div>
+            <h3 class="mx-4 my-4 text-blue-600 cursor-pointer w-fit">
+              Show More
+            </h3>
+          </div>
+          <div class="who m-4 bg-gray-900 w-[300px] py-5 rounded-xl">
+            <h1 class="text-xl mx-3 my-1 font-bold">Who to Follow</h1>
+            <div
+              class="list px-4 p-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl flex gap-3 items-center justify-between"
+            >
+              <img class="w-15 rounded-full" src="./img/1.png" alt="" />
+              <div class="font-bold flex flex-col justify-center text-sm">
+                <span class="hover:underline">Vinay Mahendre</span>
+                <div class="text-gray-500 text-sm cursor-pointer">
+                  @vinaymahendre
+                </div>
+              </div>
+              <button
+                class="border rounded-2xl h-[35px] w-[80px] bg-[#00d5ff] text-black font-bold text-sm cursor-pointer hover:bg-[#00b3ff]"
+              >
+                Follow
+              </button>
+            </div>
+            <div
+              class="list px-4 p-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl flex gap-3 items-center justify-between"
+            >
+              <img class="w-15 rounded-full" src="./img/2.jpg" alt="" />
+              <div class="font-bold flex flex-col justify-center text-sm">
+                <span class="hover:underline">Hacker BlueSpy</span>
+                <div class="text-gray-500 text-sm cursor-pointer">
+                  @hackerbluespy
+                </div>
+              </div>
+              <button
+                class="border rounded-2xl h-[35px] w-[70px] bg-[#00d5ff] text-black font-bold text-sm cursor-pointer hover:bg-[#00b3ff]"
+              >
+                Follow
+              </button>
+            </div>
+            <div
+              class="list px-4 p-3 hover:bg-gray-800 cursor-pointer hover:rounded-2xl flex gap-3 items-center justify-between"
+            >
+              <img class="w-15 rounded-full" src="./img/3.jpg" alt="" />
+              <div
+                class="font-bold flex flex-col justify-center text-sm relative right-[16px]"
+              >
+                <span class="hover:underline">SecurityX</span>
+                <div class="text-gray-500 text-sm cursor-pointer">
+                  @securityx
+                </div>
+              </div>
+              <button
+                class="border rounded-2xl h-[35px] w-[70px] bg-[#00d5ff] text-black font-bold text-sm cursor-pointer hover:bg-[#00b3ff]"
+              >
+                Follow
+              </button>
+            </div>
+            <div
+              class="down flex justify-center items-center cursor-pointer hover:text-[#00d5ff]"
+            >
+              <span class="material-symbols-outlined hover:text-[#00d5ff]">
+                arrow_drop_down
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        const aboutLink = document.getElementById('aboutLink');
+        const modal = document.getElementById('modal');
+    
+        aboutLink.addEventListener('click', (e) => {
+          e.preventDefault(); 
+          modal.classList.remove('hidden');
+        });
+    
+        modal.addEventListener('click', (e) => {
+          if(e.target === modal) {
+            modal.classList.add('hidden');
+          }
+        });
+      </script>
+  </body>
+<!-- Code written by Vinay Mahendre -->
+</html>
