@@ -3,7 +3,7 @@
 CyberTweet is a (Like New Social Cybersecurity Tweet Platform ) modern UI project designed to showcase **Tailwind CSS V4** skills. This project design is inspired by **X (formerly Twitter)** and built with a clean, professional design.
 
 ## 🌐 Live Demo
-Want to see CyberTweet? [Check it out here](https://vinaymahendre.github.io/CyberTweet/)
+Want to see CyberTweet? [Check it out here](https://bit0x1er.github.io/SoundWave/)
 
 ## ✨ Features
 
